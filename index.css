@@ -1,0 +1,132 @@
+ body {
+    background: linear-gradient(to right,#05FBFF, #2fbd5a);
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.0rem;
+  padding-bottom: 0.0rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+
+
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.0rem 0.0rem;
+}
+
+
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+} 
+
+/* E>F : Eの直の子であるFのみに適用*/
+@media (max-width: 991.98px) {
+    .navbar-expand-lg > .container,
+    .navbar-expand-lg > .container-fluid, 
+    .navbar-expand-lg > .container-sm, 
+    .navbar-expand-lg > .container-md, 
+    .navbar-expand-lg > .container-lg, 
+    .navbar-expand-lg > .container-xl {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+    .navbar-expand-lg .navbar-nav {
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-expand-lg > .container,
+    .navbar-expand-lg > .container-fluid, 
+    .navbar-expand-lg > .container-sm, 
+    .navbar-expand-lg > .container-md, 
+    .navbar-expand-lg > .container-lg, 
+    .navbar-expand-lg > .container-xl {
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+    }
+    .navbar-expand-lg .navbar-collapse {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+    }
+    .navbar-expand-lg .navbar-toggler {
+      display: none;
+    }
+}
+
+.navK {
+  text-align: center;
+}
+
+.navkul {
+  margin: 0 ;
+  padding: 0 ;
+}
+
+ul li{
+  list-style: none;
+  display: inline-block;
+  width: 10%;
+  min-width: 90px; 
+}
+
+ul li:not(:last-child){
+  border-right:1px solid #333;
+  padding:1.0em;
+  padding-top: 5px;
+  padding-bottom: 5px; 
+}
+
+nav a{
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Cinzel', serif;
+  
+}
+
+nav a.current{
+  color: #00B0F0;
+  border-bottom:2px solid #00B0F0;
+}
+
+nav a:hover{
+  color:#9b7b1d;
+  
+}
