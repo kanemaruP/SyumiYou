@@ -1,5 +1,6 @@
  body {
-    background: linear-gradient(to right,#05FBFF, #2fbd5a);
+    /* background: linear-gradient(to right,#05FBFF, #2fbd5a); */
+    background: #f8ead2;
     color: #000000;
     margin: 0;
     padding: 0;
@@ -15,8 +16,6 @@
   white-space: nowrap;
 }
 
-
-
 .navbar {
   position: relative;
   display: -ms-flexbox;
@@ -27,7 +26,7 @@
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.0rem 0.0rem;
+  padding: 0.15rem 0.0rem;
 }
 
 
@@ -118,7 +117,7 @@ nav a{
   text-decoration: none;
   color: #000000;
   font-family: 'Cinzel', serif;
-  
+  font-size: 18px;
 }
 
 nav a.current{
@@ -129,4 +128,17 @@ nav a.current{
 nav a:hover{
   color:#9b7b1d;
   
+}
+
+.mainK{
+  display: grid;
+  grid: "header header header"  10%
+         "menu main side"       80%
+         "footer footer footer" 10%
+      /   10rem   40rem   6.7rem;
+  .header { grid-area: header; }
+  .menu   { grid-area: menu; }
+  .main   { grid-area: main; }
+  .side   { grid-area: side; }
+  .footer { grid-area: footer; }
 }
