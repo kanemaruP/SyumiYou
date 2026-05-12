@@ -1,4 +1,4 @@
- body {
+body {
     background: #eee7dd;
     color: #000000;
     margin: 0;
@@ -133,12 +133,10 @@ nav a:hover{
 
 .headK{
   width: 100%;
-  height: 300px;
-  background-image: url('sakura.jpg'); 
-  /*background: #dabd67;*/
+  height: 200px;
+  /* background-image: url('../sakura.jpg'); */ 
+  background: #cfc0ae;
   
-  background-size: cover; /* 画像を横幅いっぱいに表示 */
-  background-position: center; /* 画像を中央に配置 */
 
 }
 
@@ -208,11 +206,15 @@ nav a:hover{
 
 .mainK{
   display: grid;
-  grid:  "menu   main   side"   100%
-      /   10rem  40rem  22rem;
+  grid:  "menu   main   side"   80%
+      /   10rem  40rem  20rem;
   
   
-  .menu   { grid-area: menu; }
+  .menu   { 
+    grid-area: menu; 
+    /* background: #000000; */
+    
+  }
   .main   { grid-area: main; }
   .side   { 
     grid-area: side; 
@@ -220,6 +222,7 @@ nav a:hover{
     margin-left: 3rem;
     margin-top: 5rem;
     height: 20rem;
+    /* background: #000000; */
     
   }
 
