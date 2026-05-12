@@ -41,7 +41,7 @@
 } 
 
 /* E>F : Eの直の子であるFのみに適用*/
-@media (max-width: 991.98px) {
+@media (max-width: 991.98px) {/*スマホ*/
     .navbar-expand-lg > .container,
     .navbar-expand-lg > .container-fluid, 
     .navbar-expand-lg > .container-sm, 
@@ -139,6 +139,7 @@ nav a:hover{
   
   background-size: cover; /* 画像を横幅いっぱいに表示 */
   background-position: center; /* 画像を中央に配置 */
+  overflow-x: hidden;
 
 }
 
@@ -170,7 +171,6 @@ nav a:hover{
   margin: 10px 0px;
 }
 .mapR {
-  
 	width: 60%;
 	float: right;
   text-align: left;
@@ -209,8 +209,8 @@ nav a:hover{
 .mainK{
   display: grid;
   grid:  "menu   main   side"   100%
-      /   10rem  40rem  22rem;
-  
+       /   10rem  40rem  22rem; 
+      /* /   13%  51%  28%; */
   
   .menu   { grid-area: menu; }
   .main   { grid-area: main; }
