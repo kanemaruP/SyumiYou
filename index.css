@@ -151,6 +151,7 @@ nav a:hover{
   background-size: cover;
   font-weight: bold;
   
+  
 }
 
 .h1k{
@@ -209,9 +210,9 @@ nav a:hover{
 .mainK{
   display: grid;
   grid:  "menu   main   side"   100%
-       /   10rem  40rem  22rem; 
-      /* /   13%  51%  28%; */
-  
+       /* /   10rem  40rem  22rem; */ 
+       /   13%  51%  28%; 
+
   .menu   { grid-area: menu; }
   .main   { grid-area: main; }
   .side   { 
@@ -223,4 +224,54 @@ nav a:hover{
     
   }
 
+}
+
+@media (max-width: 991.98px){
+
+  .mainK{
+    display: grid;
+    grid:  "main"   50%
+           "side"   50%
+       /* /   10rem  40rem  22rem; */ 
+        /   100%;
+    
+    margin-right: 2%;
+    margin-left: 2%;
+
+    .side   { 
+      grid-area: side; 
+      align-self: end;
+      margin: 0;
+      margin-bottom: 5%;
+      height: 20rem;
+      
+    }
+  }
+
+  .h2k{
+    text-align: center;
+  }
+
+  .h2Side{
+    margin: 0%;
+  }
+
+  
+  .map-main{
+    text-align: center;
+  }
+  .mapL{
+    float: none;
+    
+  }
+  .mapR{
+    float:  none;
+    width: 100%;
+    text-align: center;
+  }
+
+  ul li:not(:last-child){
+   margin-top: 3px;
+   margin-bottom: 3px;
+  }
 }
