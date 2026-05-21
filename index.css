@@ -1,5 +1,6 @@
  body {
-    background: #eee7dd;
+    /* background: #eee7dd; */
+    background: #f5efe6;
     color: #000000;
     margin: 0;
     padding: 0;
@@ -227,6 +228,11 @@ nav a:hover{
 }
 
 @media (max-width: 991.98px){
+  .navbar-brand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .mainK{
     display: grid;
