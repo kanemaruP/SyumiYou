@@ -205,21 +205,6 @@ margin-bottom: 3rem;
   overflow-wrap: anywhere;
 }
 
-.miscK{
-  font-size: 1.3rem;
-  margin-left: 1rem;
-  margin-top: 0.4rem;
-}
-
-
-.miscK > a > p{
-  font-size: 1.0rem;
-  margin-left: 1rem;
-  margin-top: -0.1rem;
-  margin-bottom: -0.1rem;
-  overflow-wrap: anywhere;
-}
-
 .blogPage{
   /* border: solid 1px #000000; */
   background-color: #ebe3d8;
@@ -291,12 +276,7 @@ background: #FFFFFF;
 overflow-y: scroll;
 }
 
-.menuK{
-  margin-left: 1rem;
-  margin-top: 50%;
-  border: 1px solid #000000;
-  background: #FFFFFF;
-}
+
 
 
 .mainK{
@@ -308,7 +288,10 @@ grid:
      /   13%  87% ; 
 
 .menu   { 
-  grid-area: menu;  
+  grid-area: menu;
+  background: #000000;
+  margin-top: 50%; 
+  
 }
 .main   { 
   grid-area: main;
